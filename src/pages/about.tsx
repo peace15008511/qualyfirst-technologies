@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PageStarterSection from "@/components/PageStarterSection";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -14,6 +15,7 @@ export default function About() {
       <main className="min-h-screen bg-white text-black">
         {/* Content */}
         <section className="py-16 px-8 max-w-5xl mx-auto space-y-12">
+          {/* Mission */}
           <div className="flex flex-col md:flex-row items-center gap-10">
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold text-[#0056A6] mb-4">
@@ -28,14 +30,17 @@ export default function About() {
               </p>
             </div>
             <div className="md:w-1/2">
-              <img
+              <Image
                 src="/images/mission.jpg"
                 alt="Our mission"
+                width={600}
+                height={400}
                 className="rounded-2xl shadow-lg w-full object-cover"
               />
             </div>
           </div>
 
+          {/* Expertise */}
           <div className="flex flex-col md:flex-row items-center gap-10 md:flex-row-reverse">
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold text-[#0056A6] mb-4">
@@ -51,14 +56,17 @@ export default function About() {
               </p>
             </div>
             <div className="md:w-1/2">
-              <img
+              <Image
                 src="/images/expertise.jpg"
                 alt="Our expertise"
+                width={600}
+                height={400}
                 className="rounded-2xl shadow-lg w-full object-cover"
               />
             </div>
           </div>
 
+          {/* Approach */}
           <div className="flex flex-col md:flex-row items-center gap-10">
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold text-[#0056A6] mb-4">
@@ -75,14 +83,17 @@ export default function About() {
               </p>
             </div>
             <div className="md:w-1/2">
-              <img
+              <Image
                 src="/images/approach.jpg"
                 alt="Our approach"
+                width={600}
+                height={400}
                 className="rounded-2xl shadow-lg w-full object-cover"
               />
             </div>
           </div>
 
+          {/* Final Note */}
           <p className="text-gray-700 leading-relaxed font-semibold text-center text-lg">
             At QUALYFIRST TECHNOLOGIES, we don&apos;t just test software, we
             build confidence in your product. Our goal is to ensure that your
@@ -91,6 +102,7 @@ export default function About() {
           </p>
         </section>
       </main>
+
       <Footer />
     </>
   );

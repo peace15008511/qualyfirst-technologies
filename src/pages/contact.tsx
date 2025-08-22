@@ -31,9 +31,9 @@ export default function ContactPage() {
               Get In Touch
             </h2>
             <p className="text-gray-600 mb-6">
-              We'd love to hear from you! Whether you have a project in mind, a
-              question, or just want to say hi, reach out to us through the
-              details below or send us a message using the form.
+              We&apos;d love to hear from you! Whether you have a project in
+              mind, a question, or just want to say hi, reach out to us through
+              the details below or send us a message using the form.
             </p>
 
             {/* Contact Details */}
